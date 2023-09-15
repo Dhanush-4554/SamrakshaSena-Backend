@@ -29,4 +29,19 @@ const getAdmin = async(req,res)=>{
     }
 }
 
-module.exports = {getAgencyLoactions,getAdmin};
+const getAllAgency = async(req,res)=>{
+    const userId = req.id;
+    const keyword = req.query.search ? {
+        $or:[
+            {AgencyName:{$regex:req.query.search , $options:'i'}},
+            {AgencyEmail:{$regex:req.query.search , $options:'i'}} // Find the user by Name or email using query
+        ]
+    } : null
+
+    const agencies = await AgencyAdmin.find(keyword).find({_id:{$ne:userId}}); //This is to get all Agency Accept the logged in One
+
+    return res.status(200).json({agencies});
+}
+
+
+module.exports = {getAgencyLoactions,getAdmin,getAllAgency};

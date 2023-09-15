@@ -5,6 +5,8 @@ const cookieParser = require('cookie-parser');
 
 const connectDB = require('./db/connectDB');
 const Routes = require('./routes/routes');
+const ChatRoutes = require('./routes/ChatRoutes')
+
 
 const PORT = process.env.PORT || 5000 ;
 const corsoptions = {
@@ -17,6 +19,7 @@ app.use(express.json());
 app.use(cors(corsoptions));
 app.use(cookieParser());
 app.use('/api',Routes);
+app.use('/chatroom',ChatRoutes);
 
 
 const start = async () => {
