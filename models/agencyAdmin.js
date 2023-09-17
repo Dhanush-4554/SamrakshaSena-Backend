@@ -9,7 +9,6 @@ const agencySchema = new mongoose.Schema({
     AgencyNumber:{
         type:String,
         required:true,
-        unique:true
     },
     AgencyEmail:{
         type:String,

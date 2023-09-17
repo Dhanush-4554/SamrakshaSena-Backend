@@ -3,18 +3,21 @@ const routes = express.Router();
 
 const Verifytoken = require('../middlewares/verifyAuth');
 const acessChats = require('../controllers/ChatControllers/accessChat');
+const fetchChats = require('../controllers/ChatControllers/fetchChats');
+const createGroupChat = require('../controllers/ChatControllers/createGroupChat');
+const addToGroup = require('../controllers/ChatControllers/addToGroup');
 
 
-// //Post Requests
+//Post Requests
 routes.post('/getChat',Verifytoken,acessChats);
-// route.post('/createGroup',Verifytoken,createGroupChat);
+routes.post('/createGroup',Verifytoken,createGroupChat);
 
-// //Get Requests
-// route.get('/',Verifytoken,fetchChats);
+//Get Requests
+routes.get('/fetchUserChats',Verifytoken,fetchChats);
 
-// //put Requests
+//put Requests
 // route.put('/removeFromGroup',Verifytoken,removeFromGroup);
-// route.put('/addToGroup',Verifytoken,addToGroup)
+routes.put('/addToGroup',Verifytoken,addToGroup)
 
 module.exports = routes;
 

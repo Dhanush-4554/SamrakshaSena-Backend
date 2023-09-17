@@ -1,5 +1,5 @@
 const Chat = require('../../models/chatModel');
-const AgencyAdmin = require('../../models/agencyAdmin')
+const AgencyAdmin = require('../../models/agencyAdmin');
 
 const acessChats = async(req,res)=>{
 
@@ -39,7 +39,7 @@ const acessChats = async(req,res)=>{
 
             const FullChat = await Chat.findOne({_id:createdChat._id})
                 .populate('users','-AgencyPassword')
-                .populate('lastMessage');
+                // .populate('lastMessage');
 
             return res.status(200).json(FullChat);
         } catch (error) {
