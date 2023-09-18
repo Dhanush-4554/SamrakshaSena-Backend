@@ -7,6 +7,8 @@ const createGroupChat = async(req,res) =>{
     const GroupName = req.body.GroupName;
     const GroupAdmin = req.id;
 
+    //console.log(usersRecieved,GroupName);
+
     if( !usersRecieved || !GroupName){
         return res.status(400).json({message:'Please Fill All the inputs'});
     }
