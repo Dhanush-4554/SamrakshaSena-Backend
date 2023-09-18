@@ -6,6 +6,8 @@ const acessChats = require('../controllers/ChatControllers/accessChat');
 const fetchChats = require('../controllers/ChatControllers/fetchChats');
 const createGroupChat = require('../controllers/ChatControllers/createGroupChat');
 const addToGroup = require('../controllers/ChatControllers/addToGroup');
+const removeFromGroup = require('../controllers/ChatControllers/removeFromGroup.js');
+
 
 
 //Post Requests
@@ -16,7 +18,7 @@ routes.post('/createGroup',Verifytoken,createGroupChat);
 routes.get('/fetchUserChats',Verifytoken,fetchChats);
 
 //put Requests
-// route.put('/removeFromGroup',Verifytoken,removeFromGroup);
+routes.put('/removeFromGroup',Verifytoken,removeFromGroup);
 routes.put('/addToGroup',Verifytoken,addToGroup)
 
 module.exports = routes;
