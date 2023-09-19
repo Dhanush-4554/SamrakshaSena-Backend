@@ -7,6 +7,9 @@ const fetchChats = require('../controllers/ChatControllers/fetchChats');
 const createGroupChat = require('../controllers/ChatControllers/createGroupChat');
 const addToGroup = require('../controllers/ChatControllers/addToGroup');
 const removeFromGroup = require('../controllers/ChatControllers/removeFromGroup.js');
+const {sendMessage} = require('../controllers/MessgaeControllers/SendMessages');
+const allMessages = require('../controllers/MessgaeControllers/allMessages');
+
 
 
 
@@ -19,7 +22,19 @@ routes.get('/fetchUserChats',Verifytoken,fetchChats);
 
 //put Requests
 routes.put('/removeFromGroup',Verifytoken,removeFromGroup);
-routes.put('/addToGroup',Verifytoken,addToGroup)
+routes.put('/addToGroup',Verifytoken,addToGroup);
+
+
+//Messaging Routes
+
+//post Requests
+routes.post('/sendMsg',Verifytoken,sendMessage);
+
+
+//Get requests
+
+routes.get('/getMsg/:chatID',Verifytoken,allMessages)
+
 
 module.exports = routes;
 
