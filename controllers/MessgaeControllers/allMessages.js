@@ -4,7 +4,7 @@ const Chat = require("../../models/chatModel");
 
 const allMessages = async(req,res) => {
 
-    console.log(req.params.chatID);
+    //console.log(req.params.chatID);
     
     try{
         const msg = await Message.find({chat:req.params.chatID})
