@@ -17,7 +17,7 @@ route.post('/logout',Verifytoken,Logout);
 route.post('/alertAgency',AlertAgency)
 
 // //Get Requests
-route.get('/getEveryThing',getEveryThing);
+route.get('/getEveryThing/?',getEveryThing);
 route.get('/agencyLocations',getAgencyLoactions);
 route.get('/getAllagencies',Verifytoken,getAllAgency)
 route.get('/agencyAdminInfo',Verifytoken,getAdmin);

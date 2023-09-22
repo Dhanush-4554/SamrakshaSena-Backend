@@ -14,9 +14,15 @@ const getAgencyLoactions = async (req, res) => {
 }
 
 const getEveryThing = async (req, res) => {
-    const All = await AgencyAdmin.find();
 
-    return res.status(200).json(All);
+    const keyword = req.query.AgencyCategory;
+
+    if(keyword){
+        const All = await AgencyAdmin.find({AgencyCategory:keyword});
+        return res.status(200).json(All);
+    } else{
+        return 'Error'
+    }
 }
 
 const getAdmin = async(req,res)=>{
