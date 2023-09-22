@@ -8,6 +8,7 @@ const Logout = require('../controllers/Logout');
 const refreshToken = require('../middlewares/refreshToken');
 const AlertAgency = require('../controllers/AlertAgency');
 const {getAgencyLoactions,getAdmin,getAllAgency, getEveryThing} = require('../controllers/AgencyInfo');
+const AssistAlert = require('../controllers/AssistAlert');
 
 
 //Post Requests
@@ -15,6 +16,7 @@ route.post('/register',Register);
 route.post('/login',Login);
 route.post('/logout',Verifytoken,Logout);
 route.post('/alertAgency',AlertAgency)
+route.post('/assistNeeded',AssistAlert)
 
 // //Get Requests
 route.get('/getEveryThing/?',getEveryThing);
