@@ -1,5 +1,6 @@
 const AgencyLocations = require('../models/agencyLoactions');
 const AgencyAdmin = require('../models/agencyAdmin');
+const { populate } = require('dotenv');
 require('dotenv').config();
 
 
@@ -10,6 +11,12 @@ const getAgencyLoactions = async (req, res) => {
     //     LocationMap[user._id] = user;
     // });
     return res.status(200).json({ AllLocation: Locations })
+}
+
+const getEveryThing = async (req, res) => {
+    const All = await AgencyAdmin.find();
+
+    return res.status(200).json(All);
 }
 
 const getAdmin = async(req,res)=>{
@@ -44,4 +51,4 @@ const getAllAgency = async(req,res)=>{
 }
 
 
-module.exports = {getAgencyLoactions,getAdmin,getAllAgency};
+module.exports = {getAgencyLoactions,getAdmin,getAllAgency,getEveryThing};
