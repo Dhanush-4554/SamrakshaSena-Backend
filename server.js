@@ -74,3 +74,18 @@ io.on("connection", (socket) => {
     })
 
 })
+
+
+app.post('/api/sendDataToBackend', (req, res) => {
+    const { latitude, longitude, agencyName, phoneNumber } = req.body;
+  
+    console.log('Received Data from Frontend:');
+    console.log('User Location - Latitude:', latitude);
+    console.log('User Location - Longitude:', longitude);
+    console.log('Nearest Agency Name:', agencyName);
+    console.log('Nearest Agency Phone Number:', phoneNumber);
+
+    res.status(200).send('Data received successfully');
+  });
+
+
