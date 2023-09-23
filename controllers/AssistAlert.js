@@ -28,6 +28,7 @@ const AssistAlert = async (req, res) => {
         })
         .then((res) => {
             console.log('Message Sent');
+            
         })
         .catch((err) => { console.log(err); });
 
@@ -39,7 +40,10 @@ const AssistAlert = async (req, res) => {
             to: `+91 ${AgencyNumberToCall}`,
             from: `${TwilioNumber}`
         })
-        .then(call => console.log(call.sid,'Call sent'))
+        .then((call) => {
+            console.log(call.sid,'Call sent')
+            return res.status(200).json({message:'Call and Message Sent'});
+        } )
         .catch((err) => { console.log(err); });
 
 }
