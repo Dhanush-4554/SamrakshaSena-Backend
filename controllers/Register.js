@@ -46,7 +46,8 @@ const Register = async (req, res) => {
         AgencyName,
         Category:AgencyCategory,
         Longitude:AgencyLongitude,
-        Latitude:AgencyLatitude
+        Latitude:AgencyLatitude,
+        AgencyNumber
     }
 
     try {
