@@ -17,7 +17,11 @@ const agencyLoactionSchema = new mongoose.Schema({
     Category:{
         type:String,
         required:true
-    }
+    },
+    AgencyNumber:{
+        type:String,
+        required:true,
+    },
 });
 
 module.exports = new mongoose.model('AgencyLocationDB',agencyLoactionSchema);

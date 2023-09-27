@@ -6,9 +6,9 @@ require('dotenv').config();
 
 const getAgencyLoactions = async (req, res) => {
     const Locations = await AgencyLocations.find({});
-    // const LocationMap = {}
-    // Locations.forEach((user) => {
-    //     LocationMap[user._id] = user;
+    // const { id , phone } = req.body;
+    // const update = await AgencyLocations.findByIdAndUpdate({_id:id},{
+    //     AgencyNumber:phone
     // });
     return res.status(200).json({ AllLocation: Locations })
 }
