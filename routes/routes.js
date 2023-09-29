@@ -10,6 +10,7 @@ const AlertAgency = require('../controllers/AlertAgency');
 const {getAgencyLoactions,getAdmin,getAllAgency, getEveryThing} = require('../controllers/AgencyInfo');
 const AssistAlert = require('../controllers/AssistAlert');
 const {PostLicense, getLicense} = require('../controllers/AgencyLicense');
+const registerGovt = require('../controllers/GovtDepartment');
 
 
 //Post Requests
@@ -19,7 +20,8 @@ route.post('/logout',Verifytoken,Logout);
 route.post('/alertAgency',AlertAgency)
 route.post('/assistNeeded',AssistAlert);
 route.post('/postLicense',PostLicense);
-route.post('/getLicense',getLicense)
+route.post('/getLicense',getLicense);
+route.post('/registerGovt',registerGovt);
 
 // //Get Requests
 route.get('/getEveryThing/?',getEveryThing);
