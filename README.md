@@ -26,6 +26,7 @@ Our system supplements digital alerts with an automated phone call to appropriat
 To further enhance the response, in addition to phone calls, our system sends automated SMS alert to the appropriate nearest agency. This SMS message include a link to the emergency location with the shortest route, tailored to the type of emergency. Alongside location information, the SMS contains an emergency alert that demands immediate attention and action.<br>
 By combining automated phone calls, SMS alerts, and the precision of our categorization system, our enhanced emergency notification system ensures that agencies receive the vital information they need through multiple channels. This comprehensive approach greatly enhances their ability to respond swiftly and efficiently to any emergency situation.
 <br>
+
 3. View Locations of All Agencies:
 Navigating through the application, users can access a map-based feature that visualizes the geographical locations of all registered rescue agencies. Map markers provide at-a-glance access to agency details and contact information. Users can filter agencies based on their categories, facilitating efficient allocation of resources during emergencies. Additionally, integrated navigation directions offer swift routes to agency locations, ensuring timely response.
 
