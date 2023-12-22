@@ -17,9 +17,7 @@ The Disaster Management and Coordination web-application serves as a pivotal sol
 This foundational feature enables rescue agencies to register effortlessly, ensuring that their essential information is securely stored. Agencies can provide their name, contact number, email, address, description, category, and location, thus facilitating seamless identification during disaster response. Password-protected accounts guarantee data privacy and accessibility for registered agencies, ensuring a smooth login process. Further, Data privacy is done by hashing of password using bcrypt and jwt authentication.
 
 2. Enhanced Emergency Alert System:
-
 In times of crisis, our Enhanced Emergency Alert System is designed to seamlessly connect users with the nearest and most appropriate rescue agency based on the type of emergency. Here's how it works:
-
 User Emergency Button:
 When an emergency arises, the User Emergency Button becomes your lifeline. A simple click alerts the system, triggering an instant response from the nearest and most relevant agency. This system is finely tuned to categorize emergencies, ensuring that the right agency is notified promptly. <br>
 **Automated Phone Call Alerts:
