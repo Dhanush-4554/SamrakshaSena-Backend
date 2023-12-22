@@ -20,17 +20,12 @@ This foundational feature enables rescue agencies to register effortlessly, ensu
 
 In times of crisis, our Enhanced Emergency Alert System is designed to seamlessly connect users with the nearest and most appropriate rescue agency based on the type of emergency. Here's how it works:
 
-
-
 User Emergency Button:
 When an emergency arises, the User Emergency Button becomes your lifeline. A simple click alerts the system, triggering an instant response from the nearest and most relevant agency. This system is finely tuned to categorize emergencies, ensuring that the right agency is notified promptly.
-
 **Automated Phone Call Alerts:
 Our system supplements digital alerts with an automated phone call to appropriate nearest agency. In the event of an emergency, the system automatically dials the appropriate agency, delivering critical information and instructions in real-time. This approach leaves no room for crucial details to be overlooked.
-
 **Automated SMS Alerts:
 To further enhance the response, in addition to phone calls, our system sends automated SMS alert to the appropriate nearest agency. This SMS message include a link to the emergency location with the shortest route, tailored to the type of emergency. Alongside location information, the SMS contains an emergency alert that demands immediate attention and action.
-
 By combining automated phone calls, SMS alerts, and the precision of our categorization system, our enhanced emergency notification system ensures that agencies receive the vital information they need through multiple channels. This comprehensive approach greatly enhances their ability to respond swiftly and efficiently to any emergency situation.
 
 3. View Locations of All Agencies:
