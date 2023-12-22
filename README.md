@@ -1,6 +1,5 @@
 # Backend
 SMART INDIA HAKATHON 2023
-TEAM NAME – ABD-Vinners
 
 THEME – Disaster Management
 
@@ -53,18 +52,18 @@ In conclusion, the Disaster Management and Coordination web-application stands a
 Tech Stacks Used : 
 
 Frontend : 
-	React.js
-	Socket.io 
-	Chakra UI
+	React.js,
+	Socket.io, 
+	Chakra UI,
 	Maps ( Leaflet , Google Maps )
 
 Backend :
-	Node.js
-	Express.js
-	Socket.io – server
-	Mongoose
+	Node.js,
+	Express.js,
+	Socket.io – server,
+	Mongoose,
 	Jwt(JSON Web Token), 
-bcrypt.js
+	bcrypt.js,
 	Twillio API
 
 DataBase :
